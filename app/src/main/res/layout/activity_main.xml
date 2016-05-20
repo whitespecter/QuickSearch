@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+        <com.jiangting.quicksearch.quicksidebar.QuickSideBarTipsView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="60dp"
+            android:id="@+id/quickSideBarTipsView"
+            app:sidebarTextColor="@android:color/white"
+            app:sidebarBackgroundColor="@android:color/darker_gray">
+
+        </com.jiangting.quicksearch.quicksidebar.QuickSideBarTipsView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="4.75"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent">
+        <com.jiangting.quicksearch.quicksidebar.QuickSideBarView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/quickSideBarView"
+            app:sidebarTextColorChoose="@color/colorPrimary"
+            app:sidebarTextColor="#FF4081"
+            />
+    </LinearLayout>
+
+
+    <!-- <com.jiangting.quicksearch.quicksidebar.QuickSideBarTipsView
+         android:id="@+id/quickSideBarTipsView"
+         app:sidebarTextColor="@android:color/white"
+         app:sidebarBackgroundColor="@color/colorPrimary"
+         android:layout_toLeftOf="@+id/quickSideBarView"
+         android:layout_width="@dimen/height_quicksidebartips"
+         android:layout_height="match_parent"/>
+
+     <com.jiangting.quicksearch.quicksidebar.QuickSideBarView
+         android:id="@+id/quickSideBarView"
+         app:sidebarTextColorChoose="@color/colorPrimary"
+         app:sidebarTextColor="@android:color/black"
+         android:layout_alignParentRight="true"
+         android:layout_width="20dp"
+         android:layout_height="match_parent"/>
+
+     <ListView
+         android:id="@+id/listView"
+         android:layout_toLeftOf="@+id/quickSideBarView"
+         android:layout_width="20dp"
+         android:layout_height="match_parent"/> -->
+
+</LinearLayout>
